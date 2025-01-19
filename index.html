@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/images/gato.jpg" />
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matteo Purwana</title>
+  </head>
+  <body>
+    <div class="parent">
+      <p id="line1wrap"><span class="child" id="line1"></span></p>
+      <div id="line2" class="child">My name is Matteo</div>
+      <div id="line3" class="child">
+        <p id="content1">
+          I have created this webpage not only as a personal project of mine to showcase my interests and skills but also as a means to fully talk about myself.
+
+        </p>
+      </div>
+      <div id="line4" class="child">
+        <p id="content2">
+          My full name is &lt;<span class="child" id="content2type">insert</span>&gt;. <br>Although I reside in Bali now, I was born and raised for the big majority of my life in Jakarta, Indonesia.
+        </p>
+      </div>
+      <div id="line5" class="child">
+        <p id="content3">
+          Growing up, I had always displayed a keen interest in technology and sciences. 
+          Starting from the age of 13, I personally studied programming. I mainly began learning with Python, before moving onto some of the basics of C++ and JavaScript. Throughout that age, I indulged in many small personal projects such as simple text-based RPG games and very rudimentary chatbots.
+        </p>
+      </div>
+      <div id="line6" class="child">
+        <p id="content4">
+          I created this website out of a rekindled interest in JavaScript, HTML, and writing code in general that stemmed from A Level IT Class. With what knowledge I had, I decided to build this website using the Three.JS library as the main attraction and used CSS Grid and the Vite build tool to allow me to set the website up much better.
+        </p>
+      </div>
+      
+      <section id="sec1">
+        
+        <div class="overlay">
+          <section id="sec2">
+            My Telephone Number: +62-821-2503-9908 
+          </section>
+          <div id="line7" class="child">
+            <p id="content5">
+              Moving to Bali and entering a new highschool, I faced a rough transition that would explain my stunted academics in my eleventh grade. 
+              <br>
+              <br>
+              Going through it, however, I strived, and I found a lot of interest in my A Level Math and IT classes. I set my mind on being more competent in my academics, which resulted in high grades in Math and various subjects, a 1480 on my SATs, a band 8.5 on my IELTS academic test, and even a top score in IT Class.
+              <br>
+              <br>
+            </p>
+          </div>
+          <section id="sec3">
+            My Email: matteo.purwana@gmail.com 
+          </section>
+          <div id="line8" class="child">
+            <p id="content6" class="child">
+              Alongside my steady improvements in academics, I also participated in a variety of extracurricular activities that kept me active in both my school life and my personal life. 
+            </p>
+            <div class="wrapper">
+              <div class="item item1"><img src="src/images/gift giving.jpg"></div>
+              <div class="item item2"><img src="src/images/Screenshot_6.png"></div>
+              <div class="item item3"><img src="src/images/src.jpg"></div>
+              <div class="item item4"><img src="src/images/sukawati.jpg"></div>
+              <div class="item item5"><img src="src/images/Screenshot_7.png"></div>
+              <div class="item item6"><img src="src/images/Screenshot_8.png"></div>
+            </div>
+
+            <p id="content7" class="child">
+              Since the eleventh grade, I've participated in my school's Study Buddy program where I tutor lower graders on subjects such as math and science every week. Starting from the twelfth grade, I've also been one of four people in my school's student council, acting officially as the treasurer of our organization.
+            </p>
+
+            <p id="content8" class="child">
+              Furthermore, I also partake in my school's community service which allows me to teach English to kids in rural schools on a near weekly schedule. One student-council related event which I help organized also supported the aforementioned rural schools by raising funds as high as 38,000,000 IDR to supply books and supplies for them. To top it all off, I was also the lead vocalist for my school's music band, performing in various events and competitions, which significantly developed my aptitude for public speaking and performing.
+            </p>
+
+          </div>
+          <div id="line9" class="child">
+            <p id="content9" class="child">I hope to see you again !</p>
+          </div>
+        </div>
+        <h2>
+        </h2>
+  
+      </section>
+      </section>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+      var typed = new Typed("#line1",{strings:["Hello^850","Halo^1000","こんにちは^850","안녕하세요^850","你好^850"],typeSpeed:250,backSpeed:225,loop:true})
+      var typed = new Typed("#content2type",{strings:["Matteo Prakasha Putra Purwana"],typeSpeed:100,backSpeed:200,startDelay:3000,loop:false,showCursor:false})
+    </script>
+
+    <div id="scene-container">
+    <canvas id="bg"></canvas>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
