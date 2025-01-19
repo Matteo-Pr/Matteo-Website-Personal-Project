@@ -1,5 +1,5 @@
 import './style.css'
-import * as THREE from 'three'
+import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 import { LineMaterial } from 'three/examples/jsm/Addons.js';
 import { Wireframe } from 'three/examples/jsm/Addons.js';
