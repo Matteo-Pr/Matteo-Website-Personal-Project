@@ -7,17 +7,17 @@ canvas {
 
 @font-face {
     font-family: MonumentExtended;
-    src: url(../src/fonts/MonumentExtended-Regular.otf) format('opentype')
+    src: url(MonumentExtended-Regular.otf) format('opentype')
   }
   
 @font-face {
     font-family: MonumentExtendedBold;
-    src: url(../src/fonts/MonumentExtended-Ultrabold.otf) format('opentype')
+    src: url(MonumentExtended-Ultrabold.otf) format('opentype')
   }
 
 @font-face {
     font-family: MaisonNeue;
-    src: url(../src/fonts/fonnts.com-Maison_Neue_Book.ttf) format('opentype')
+    src: url(fonnts.com-Maison_Neue_Book.ttf) format('opentype')
   }
 
 
