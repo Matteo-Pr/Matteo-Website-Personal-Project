@@ -1,5 +1,6 @@
 import './style.css'
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
+import { LineSegmentsGeometry } from 'three/examples/jsm/Addons.js';
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xFFFFFF)
