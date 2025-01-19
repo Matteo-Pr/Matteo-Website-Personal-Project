@@ -1,10 +1,5 @@
 import './style.css'
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
-import { OrbitControls } from 'three/examples/jsm/Addons.js';
-import { LineMaterial } from 'three/examples/jsm/Addons.js';
-import { Wireframe } from 'three/examples/jsm/Addons.js';
-import { LineSegmentsGeometry } from 'three/examples/jsm/Addons.js';
-import { mx_bilerp_0 } from 'three/src/nodes/materialx/lib/mx_noise.js';
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xFFFFFF)
