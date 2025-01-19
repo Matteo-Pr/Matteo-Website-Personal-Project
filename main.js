@@ -2,6 +2,8 @@ import './style.css'
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2'
 import { LineSegmentsGeometry } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/lines/LineSegmentsGeometry.js';
 
+// hello !
+
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xFFFFFF)
 
