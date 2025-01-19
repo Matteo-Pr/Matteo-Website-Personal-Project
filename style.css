@@ -1,0 +1,536 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:0;
+}
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url(../src/fonts/MonumentExtended-Regular.otf) format('opentype')
+  }
+  
+@font-face {
+    font-family: MonumentExtendedBold;
+    src: url(../src/fonts/MonumentExtended-Ultrabold.otf) format('opentype')
+  }
+
+@font-face {
+    font-family: MaisonNeue;
+    src: url(../src/fonts/fonnts.com-Maison_Neue_Book.ttf) format('opentype')
+  }
+
+
+body {
+    overflow: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#scene-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1
+}
+
+@keyframes appear {
+    from {
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity:0.7;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear2 {
+    from {
+        opacity:0;
+        scale: 0.5;
+        height:10vh;
+        filter:blur(5px);
+    }
+    to {
+        opacity:0.9;
+        scale: 1;
+        height:60vh;
+        filter:blur(0);
+    }
+}
+
+@keyframes appear3 {
+    from {
+        opacity:0;
+        transform: translateY(-100px);
+        height:10vh;
+        filter:blur(5px);
+    }
+    to {
+        opacity:0.9;
+        transform: translateY(0px);
+        height:50vh;
+        filter:blur(0);
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    pointer-events: auto;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    padding-top:3%;
+  }
+
+#line1 {
+    padding-top: 10%;
+    font-weight: 600;
+    grid-row: 1;
+    color:black;
+    font-family:'Arial', sans-serif;
+    font-size:6vw;
+    text-align:left;
+    z-index: 99;
+    line-height: 3vw;
+}
+
+#line2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    grid-row: 2;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:2vw;
+    text-align:left;
+    z-index: 99
+}
+
+#line3 {
+    margin-top:7%;
+    margin-bottom:5%;
+    background-color: #FFF;
+    opacity:0.3;
+    width:50rem;
+    font-weight: 50;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    grid-row: 3;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:1.5vw;
+    text-align:left;
+    z-index: 99;
+    transition: box-shadow .8s, opacity 0.8s;
+}
+
+#line3:hover {
+    opacity:0.8;
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+#line4 {
+    opacity:0.75;
+    background-color: #FFF;
+    margin-top: 5%;
+    width:50rem;
+    font-weight: 50;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    grid-row: 4;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:1.5vw;
+    text-align:left;
+    z-index: 99;
+    transition: box-shadow .8s, opacity 0.8s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#line4:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+#line5 {
+    opacity:0.75;
+    background-color: #FFF;
+    margin-top: 5%;
+    width:50rem;
+    font-weight: 50;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    grid-row: 5;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:1.5vw;
+    text-align:left;
+    z-index: 99;
+    transition: box-shadow .8s, opacity 0.8s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#line5:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+#line6 {
+    opacity:0.75;
+    background-color: #FFF;
+    margin-top: 5%;
+    width:50rem;
+    font-weight: 50;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    grid-row: 6;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:1.5vw;
+    text-align:left;
+    z-index: 99;
+    transition: box-shadow .8s, opacity 0.8s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#line6:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+#line7 {
+    height:60vh;
+    opacity:0.9;
+    background-color: #222222;
+    width:50rem;
+    font-weight: 50;
+    padding-left: 5%;
+    padding-right: 5%;
+    place-items: center; 
+    margin: 0 auto;
+    margin-top: 50%;
+
+    grid-row: 7;
+    color:black;
+    font-family:MonumentExtended, sans-serif;
+    font-size:1.5vw;
+    z-index: 99;
+    transition: box-shadow .8s, opacity 0.9s;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#line7:hover {
+    box-shadow: 0 0 11px rgba(202, 202, 202, 0.6);
+}
+
+#line8 {
+    height:300vh;
+    opacity:0.95;
+    background-color: #222222;
+    font-weight: 50;
+    padding: 0 auto;
+    place-items: center; 
+    margin: 0 auto;
+
+    grid-row: 8;
+    color:white;
+    font-family:MaisonNeue, sans-serif;
+    font-size:1.5vw;
+    z-index: 99;
+}
+
+#line8:hover {
+    box-shadow: 0 0 11px rgba(202, 202, 202, 0.6);
+}
+
+
+#content1 {
+    width:50rem;
+    font-weight: 50;
+    align-content: center;
+    grid-row: 3;
+    color:black;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    text-align:left;
+    z-index: 99;
+}
+
+#content2 {
+    width:50rem;
+    align-content: center;
+    grid-row: 3;
+    color:black;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    text-align:left;
+    z-index: 99;
+}
+
+#content3 {
+    width:50rem;
+    font-weight: 50;
+    align-content: center;
+    grid-row: 3;
+    color:black;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    text-align:left;
+    z-index: 99;
+}
+
+#content4 {
+    width:50rem;
+    font-weight: 50;
+    align-content: center;
+    grid-row: 3;
+    color:black;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    text-align:left;
+    z-index: 99;
+}
+
+#content5 {
+    padding-top: 5%;
+    width:50rem;
+    font-weight: 50;
+    align-content: center;
+    grid-row: 3;
+    color:white;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    z-index: 99;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#content6 {
+    padding-top: 25%;
+    width:50rem;
+    font-weight: 50;
+    color:white;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    z-index: 99;
+    margin:0 auto;
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
+#content7 {
+    padding-top: 20%;
+    width:50rem;
+    font-weight: 50;
+    color:white;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    z-index: 99;
+    margin:0 auto;
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
+#content8 {
+    padding-top: 10%;
+    width:50rem;
+    font-weight: 50;
+    color:white;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    z-index: 99;
+    margin:0 auto;
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
+#content9 {
+    padding-top: 10%;
+    width:50rem;
+    font-weight: 50;
+    color:white;
+    font-family:MaisonNeue, serif;
+    font-size:2vw;
+    z-index: 99;
+    margin:0 auto;
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
+#line1wrap {
+    text-align:left;
+    grid-row: 1;
+    padding-left: 4%;
+    z-index: 99
+}
+
+.typed-cursor {
+    font-size:5vw;
+}
+
+
+#sec1 {
+    height: 100vh; 
+    color: #000; 
+    z-index: 100;
+    position:relative;
+    margin-top:0rem;
+}
+
+#sec2 {
+    height:8vh;
+    width:50vw;
+    background-color: rgba(0,0,0); 
+    color:#FFF;
+    position:relative;
+    z-index: 100;
+    align-content: center;
+    text-align: center;
+    font-family: MonumentExtended, serif;
+    font-size: 1.3vw;
+    border: 0.05rem solid #FFF;
+
+}
+
+#sec3 {
+    height:7.9vh;
+    width:50vw;
+    background-color: rgba(0,0,0); 
+    color:#FFF;
+    position:relative;
+    z-index: 100;
+    align-content: center;
+    text-align: center;
+    font-family: MonumentExtended, serif;
+    font-size: 1.3vw;
+    border: 0.05rem solid #FFF;
+    margin:0 auto;
+    margin-left: 50.6%;
+    margin-top:5%;
+
+}
+
+@media (width>980px) {
+    #sec2 {
+        position:sticky;
+        top:0rem;
+    }
+    #sec3 {
+        position:sticky;
+        top:0;
+    }
+}
+
+.overlay {
+    margin-top: 5%;
+    -webkit-backdrop-filter: invert(100%);
+    backdrop-filter: invert(100%);
+    position: relative;
+    width: 100%;
+    height: 575vh;
+    transition: all 0.3s ease;
+
+  }
+
+.distort {
+    transition: transform 0.25s;
+    will-change:transform;
+}
+
+
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@-webkit-keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 300px;
+    margin-top: 15rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+.item {
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.item1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+img { display: inline-block; 
+    height:100px; 
+    width:100px;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 6px;
+}
